@@ -1,0 +1,4 @@
+{"tag": "matthew",
+     "patterns": ["How can I kill Matthew?", "How to bully Matthew?", "How to unconvince Matthew that my friend isn't autistic?"],
+     "responses": ["Tell him he is a female", "Tell him he has no rights over men because he is a woman", "That's the thing you possibly can't"]
+},
