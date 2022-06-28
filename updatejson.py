@@ -41,21 +41,21 @@ textR2 = corpusR2
 sentence_listR2 = nltk.sent_tokenize(textR2)
 
 #-------------------------------------THANKS-----------------------------------#
-#U3 = Article('https://chappie-webpages.werdimduly.repl.co/responses/goodbye/user/')
-#U3.download()
-#U3.parse()
-#U3.nlp()
-#corpusU3 = U3.text
-#textU3 = corpusU3
-#sentence_listU3 = nltk.sent_tokenize(textU3)
+U3 = Article('https://chappie-webpages.werdimduly.repl.co/responses/goodbye/user/')
+U3.download()
+U3.parse()
+U3.nlp()
+corpusU3 = U3.text
+textU3 = corpusU3
+sentence_listU3 = nltk.sent_tokenize(textU3)
 
-#R2 = Article('https://chappie-webpages.werdimduly.repl.co/responses/goodbye/chappie/')
-#R2.download()
-#R2.parse()
-#R2.nlp()
-#corpusR2 = R2.text
-#textR2 = corpusR2
-#sentence_listR2 = nltk.sent_tokenize(textR2)
+R3 = Article('https://chappie-webpages.werdimduly.repl.co/responses/goodbye/chappie/')
+R3.download()
+R3.parse()
+R3.nlp()
+corpusR3 = R3.text
+textR3 = corpusR3
+sentence_listR3 = nltk.sent_tokenize(textR3)
 
 #--------------------------------------UPDATE-------------------------------------#
 intents= []
@@ -64,6 +64,9 @@ data['intents'][0]['patterns'] = sentence_listU1
 data['intents'][0]['responses'] = sentence_listR1
 data['intents'][1]['patterns'] = sentence_listU2
 data['intents'][1]['responses'] = sentence_listR2
+#data['intents'][1]['patterns'] = sentence_listU3
+#data['intents'][1]['responses'] = sentence_listR3
+
 
 with open('intents.json', 'w') as file:
     json.dump(data, file, indent = 4)

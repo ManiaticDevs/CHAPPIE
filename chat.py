@@ -4,11 +4,7 @@ import time
 import warnings
 import logging
 
-import colorama 
-colorama.init()
-from colorama import Fore, Style, Back
 
-print(Fore.RED + "THE PROCESS YOU ARE ABOUT TO SEE IS THE TRAINING AND UPDATING PROCESS FOR CHAPPIE" + Style.RESET_ALL)
 
 time.sleep(5)
 
@@ -27,14 +23,20 @@ def progress_bar(current, total, bar_length=20):
     print(f'Progress: [{arrow}{padding}] {int(fraction*100)}%', end=ending)
 
 print("Setting up Python for Chappie (dependencies may not be on user's computer)")
-progress_bar(00, 100)
+progress_bar(0, 100)
 os.system("py get_pip.py --user --no-warn-script-location --disable-pip-version-check>nul")
+import colorama 
+colorama.init()
+from colorama import Fore, Style, Back
+
+print(Fore.RED + "THE PROCESS YOU ARE ABOUT TO SEE IS THE TRAINING AND UPDATING PROCESS FOR CHAPPIE" + Style.RESET_ALL)
+progress_bar(25, 100)
 os.system("py updatejson.py && py train.py>nul")
 progress_bar(50, 100)
 os.system("pip install -r requirements.txt --user --no-warn-script-location --disable-pip-version-check>null")
 progress_bar(100, 100)
 time.sleep(1)
-os.system("cls")
+
 
 import json
 import numpy as np
@@ -68,12 +70,19 @@ def chat():
     print(Fore.YELLOW + "Start messaging with Chappie (type quit to stop)!" + Style.RESET_ALL)
     print(Fore.RED + "PROPERTY OF MANIATICDEVS" + Style.RESET_ALL)
     print(Fore.GREEN + "Chappie :" + Style.RESET_ALL + " Hello! I'm Chappie! Note that my responses are limited!")
-    
-
+    logging.basicConfig(
+    level=logging.INFO,
+    format="",
+    handlers=[
+        logging.FileHandler("debug.log"),
+        logging.StreamHandler(sys.stdout)
+        ]
+    )
     while True:
 
         print(Fore.LIGHTBLUE_EX + "User : " + Style.RESET_ALL, end="")
         inp = input()
+        logging.info(inp)
         if inp.lower() == "quit":
             break
 
