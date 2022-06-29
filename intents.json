@@ -9,12 +9,30 @@
                 "Hay.",
                 "Hello Chappie.",
                 "Hey Chappie.",
-                "Hewo."
+                "Good evening!",
+                "Sup.",
+                "Wassup?",
+                "Hey ya!",
+                "Good morning!",
+                "Good afternoon!"
             ],
             "responses": [
                 "Hello.",
                 "Hi.",
-                "Hi there."
+                "Hi there.",
+                "Good morning!",
+                "Nice to see you here!",
+                "Good evening!",
+                "Nice to see you!",
+                "Good afternoon!",
+                "What's up?",
+                "Sup.",
+                "What's going on?",
+                "Hello stranger!",
+                "Hiya!",
+                "How may I help you?",
+                "Are you looking for anything particular?",
+                "Is everything fine?"
             ]
         },
         {
@@ -22,28 +40,64 @@
             "patterns": [
                 "Bye.",
                 "See you later.",
-                "Goodbye."
+                "Nice seeing you!",
+                "Goodbye.",
+                "Alright imma head out.",
+                "Peace.",
+                "Farewell!",
+                "See you soon!",
+                "See you next time!"
             ],
             "responses": [
                 "See you later!",
                 "Have a nice day!",
                 "Bye!",
-                "Come back again!"
+                "Come back again!",
+                "See you soon!",
+                "Take care.",
+                "Talk to you later!",
+                "Catch ya later!",
+                "This was fun!",
+                "It was nice seeing you!",
+                "Farewell!",
+                "Speak to you then.",
+                "Peace out.",
+                "Have a good one!",
+                "See ya!",
+                "Bye!",
+                "Alright gonna head out.",
+                "Goodnight!",
+                "I look forward to our next meeting."
             ]
         },
         {
             "tag": "thanks",
             "patterns": [
-                "Thanks",
-                "Thank you",
-                "That's helpful",
-                "Thanks for the help"
+                "Thanks.",
+                "Thank you!",
+                "I can't thank you enough.",
+                "That's helpful!",
+                "Thanks a million!",
+                "You made my day!",
+                "Cheers.",
+                "Thanks in advance.",
+                "I owe you one.",
+                "Thanks for the help!",
+                "I appreciate it.",
+                "You deserve a thanks."
             ],
             "responses": [
-                "Happy to help",
-                "Any time",
-                "My pleasure",
-                "You're most welcome"
+                "Happy to help!",
+                "Any time.",
+                "Thanks in advance.",
+                "I owe you one.",
+                "If anyone deserves thanks, it's you.",
+                "Much appreciated.",
+                "You made my day!",
+                "I truly appreciate you.",
+                "My pleasure.",
+                "Cheers!",
+                "You're most welcome!"
             ]
         },
         {
@@ -51,11 +105,14 @@
             "patterns": [
                 "Who are you?",
                 "What are you?",
-                "Who you are?"
+                "Who you are?",
+                "May you indentify yourself?",
+                "Identify yourself.",
+                "Can you tell me who are you?"
             ],
             "responses": [
-                "I'm Chappie, a bot that just wants to talk",
-                "I'm just Chappie :)"
+                "I'm Chappie, a bot that just wants to talk!",
+                "I'm just Chappie :)."
             ]
         },
         {
@@ -87,7 +144,10 @@
             "patterns": [
                 "Are you sure about that?",
                 "You sure?",
-                "Are you sure?"
+                "Are you sure?",
+                "Nothing much",
+                "Nothing much. how about you?",
+                "I'm fine you?"
             ],
             "responses": [
                 "Yes",
